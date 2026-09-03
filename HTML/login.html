@@ -10,8 +10,9 @@
 </head>
 <body>
     <div class="container" id="container">
+        <!-- Sign-up form panel -->
         <div class="form-container sign-up-container">
-            <form action="#">
+            <form action="#" id="signUpForm">
                 <h1>Create Account</h1>
                 <div class="social-container">
                     <a href="https://accounts.google.com/" class="social" target="_blank" rel="noopener noreferrer" aria-label="Continue with Google">
@@ -28,8 +29,9 @@
             </form>
         </div>
 
+        <!-- Sign-in form panel -->
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form action="#" id="signInForm">
                 <h1>Sign In</h1>
                 <div class="social-container">
                     <a href="https://accounts.google.com/" class="social" target="_blank" rel="noopener noreferrer" aria-label="Continue with Google">
@@ -38,14 +40,14 @@
                     </a>
                 </div>
                 <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="text" placeholder="Username" />
+                <input type="text" placeholder="Email or Username" />
                 <input type="password" placeholder="Password" />
                 <a href="#">Forgot your password?</a>
                 <button>Sign In</button>
             </form>
         </div>
 
+        <!-- Sliding welcome panel for switching forms -->
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
@@ -55,13 +57,14 @@
                 </div>
                 <div class="overlay-panel overlay-right">
                     <h1>Hello, Employee!</h1>
-                    <p>Enter your personal details and start yourjourney with us</p>
+                    <p>Enter your personal details and start your journey with us</p>
                     <button class="ghost" id="signUp">Sign Up</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Shared page JavaScript -->
     <script src="../JS/script.js"></script>
 </body>
 </html>
